@@ -143,7 +143,11 @@ If you're building a platform using IPFS for storage, it's important to pin your
 
 Alternatively, you can delegate the infrastructure responsibility to a remote pinning service. Remote pinning services like [Pinata](https://pinata.cloud) and [Eternum](https://www.eternum.io/) provide redundant, highly-available storage for your IPFS data, without any _vendor lock-in_. Because IPFS-based content is addressed by CID instead of location, you can switch between pinning services or migrate to your private infrastructure seamlessly as your platform grows. 
 
-You can also use a service from [Protocol Labs](https://protocol.ai) called [nft.storage](https://nft.storage) to get your data into IPFS, with long-term persistence backed by the decentralized [Filecoin](https://filecoin.io) storage network. To help foster the growth of the NFT ecosystem and preserve the new _digital commons_ of cultural artifacts that NFTs represent, [nft.storage](https://nft.storage) provides free storage and bandwidth for public NFT data. Sign up for a free account at [https://nft.storage](https://nft.storage) and try it out!
+## Long-term storage for your NFT data
+Best practice for long-term NFT storage is to use [NFT.Storage](https://app.nft.storage/signup), a service dedicated to the enduring preservation of NFTs. With a low-cost, one-time fee per gigabyte, you can securely store your NFT data in our endowment-backed Filecoin storage, aiming to ensure it remains safe and accessible for years to come. After minting your NFTs, simply send the data to NFT.Storage.
+
+In addition to preserving your NFTs, NFT.Storage will include your NFTs in the NFT Token Checker, a tool that will be integrated into block explorers, marketplaces, and wallets to verify that your collections, tokens, and CIDs are securely stored long-term. [Sign up today](https://app.nft.storage/signup) to protect your digital assets with our user-friendly solution, powered by smart contracts and backed by an on-chain endowment.
+
 
 To learn more about persistence and pinning, including how to work with remote pinning services, see our [overview of persistence, permanence, and pinning][docs-persistence].
 
@@ -162,6 +166,9 @@ Here's a quick recap of our recommendations:
 - Wrapping files in directories when adding to IPFS is recommended, as it preserves filenames and makes IPFS URIs more easily readable.
 
 - Data persistence should be part of your platform's design. Running your own IPFS infrastructure or using a remote pinning service will keep your data online and accessible.
+
+- Use NFT.Storage as a best practice to back-up off-chain NFT data
+  
 
 
 [docs-cid]: ../concepts/content-addressing.md
